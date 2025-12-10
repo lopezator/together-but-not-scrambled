@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Together, but not scrambled",
+  "version": "1.0",
+  "description": "Adds a button to randomly shuffle assignee columns in a GitHub Project board.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/orgs/*/projects/*", "https://github.com/users/*/projects/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
