@@ -12,12 +12,12 @@ Shuffle your Assignee list once per day so the same person isn't stuck starting 
 
 ## Browser packages
 
-This repository now includes a dedicated extension package for each browser:
+This repository includes a dedicated extension package for each browser:
 
-- `chrome/` — unpack and load in Chrome or Chromium-based browsers
-- `firefox/` — unpack and load in Firefox
+- `chrome/` — Chrome and Chromium-based browsers
+- `firefox/` — Firefox
 
-Each folder is a complete extension bundle and can be loaded as an unpacked extension without any build step.
+There is also a legacy root-level package kept for backwards compatibility. Prefer loading the browser-specific folders for new installs.
 
 ## Chrome
 
@@ -30,8 +30,7 @@ Each folder is a complete extension bundle and can be loaded as an unpacked exte
 
 1. Open `about:addons`
 2. Click the gear menu and choose "Install Add-on From File..."
-3. Select the `firefox/manifest.json` file or load the unpacked folder from the Firefox extension page
-4. If using the Firefox Add-ons Developer Hub flow, load the unpacked `firefox/` directory as the extension package
+3. Select the `firefox/manifest.json` file or load the unpacked `firefox/` folder
 
 ## Notes
 
@@ -40,4 +39,4 @@ The extension targets GitHub Project boards at:
 - `https://github.com/orgs/*/projects/*`
 - `https://github.com/users/*/projects/*`
 
-The logic is kept identical across both browser bundles so the behavior stays consistent in Chrome and Firefox.
+The logic is identical in both browser bundles so the behavior stays consistent across Chrome and Firefox.
