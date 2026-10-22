@@ -6,6 +6,6 @@
 
 Puts an end to alphabetical order bias in your stand-up queue. 
 
-Randomly shuffle your Assignee list so the same person isn't stuck starting or ending the meeting every single day.
+Shuffle your Assignee list once per day so the same person isn't stuck starting or ending the meeting every single day. The order is seeded by the browser's current local date, so it stays stable throughout the day.
 
 **Fairness, powered by chaos.**
